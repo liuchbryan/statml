@@ -1,0 +1,6 @@
+# Ignored the compiled Stan models
+*.rds
+
+.RData
+.RHistory
+.DS_Store

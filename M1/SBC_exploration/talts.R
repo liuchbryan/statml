@@ -5,7 +5,6 @@
 # install.packages("ggplot2")
 # install.packages('reshape2')
 
-
 ## Include rstan library (+some config), and ggplot2
 library(rstan)
 options(mc.cores = parallel::detectCores())
@@ -25,12 +24,12 @@ setwd('~/Imperial/statml/M1/SBC_exploration/')
 #                           model_name = "linreg_model_underdispersed")
 
 ## Overdispersed prior
-#linreg_model <- stan_model(file='linreg_model_overdispersed.stan', 
-#                           model_name = "linreg_model_overdispersed")
+linreg_model <- stan_model(file='linreg_model_overdispersed.stan', 
+                           model_name = "linreg_model_overdispersed")
 
 ## Biased prior
-linreg_model <- stan_model(file='linreg_model_biased.stan', 
-                           model_name = "linreg_model_biased")
+#linreg_model <- stan_model(file='linreg_model_biased.stan', 
+#                           model_name = "linreg_model_biased")
 
 ### OBTAINING THE RANKS
 

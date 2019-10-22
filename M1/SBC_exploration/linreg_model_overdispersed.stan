@@ -10,7 +10,7 @@ parameters {
 }
 
 model {
-  beta ~ normal(0, 50);
+  beta ~ normal(0, 100);
   alpha ~ normal(0, 10);
   
   y ~ normal(X * beta + alpha, 1.2);
